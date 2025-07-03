@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vertex Institute</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 80px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    background: url('ad.jpg') no-repeat center center/cover;
+    background-size: 1000px 300px;
+    color: #200053;
+    
+    padding: 150px 0;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#hero .btn {
+    background-color: #1E90FF;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.course-list, .service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.course-item, .service-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.course-item img, .service-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #1E90FF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0044cc;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+    </style>
+</head>
+<body>
+    <header>
+     
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <section id="hero">
+        <div class="hero-content">
+           
+            
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Vertex Institute</h2>
+        <p>Vertex Institute offers a wide range of courses in various domains, including NIELIT certifications like O level, CCC, CCC Plus, and BCC. We also provide training in popular programming languages such as C, C++, Java, Python, and web technologies. Whether you prefer online or offline classes, we are here to provide the best education for your future.</p>
+    </section>
+
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <div class="course-list">
+            <div class="course-item">
+                <img src="nielit.jpg" alt="NIELIT Courses">
+                <h3>NIELIT Courses</h3>
+                <p>We offer O level, CCC, CCC Plus, and BCC certifications.</p>
+            </div>
+            <div class="course-item">
+                <img src="programming.jpg" alt="Programming Courses">
+                <h3>Programming Languages</h3>
+                <p>Courses in C, C++, Java, Python, Web Designing, Web Development, and Full Stack Development.</p>
+            </div>
+            <div class="course-item">
+                <img src="bca-mca.jpg" alt="BCA/MCA/BTech Tuition">
+                <h3>Online/Offline Tuitions</h3>
+                <p>Personalized tuition for BCA, MCA, and BTech students in all programming languages.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <img src="project-development.jpg" alt="Project Development">
+                <h3>Project Development</h3>
+                <p>We help students with real-time project development.</p>
+            </div>
+            <div class="service-item">
+                <img src="industrial-training.jpg" alt="Industrial Training">
+                <h3>Industrial Training</h3>
+                <p>3 to 6 months of industrial training programs with job assistance.</p>
+            </div>
+            <div class="service-item">
+                <img src="industry-visit.jpg" alt="Industry Visits">
+                <h3>Industry Visits</h3>
+                <p>Frequent industry visits to enhance practical knowledge.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For any queries, feel free to reach out to us!</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Vertex Institute. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
