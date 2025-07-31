@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Basics</title>
     <style>
         body {
             margin: 10px;
             border: 5px solid orange;
             background: linear-gradient(rgb(232, 104, 0), white, rgb(5, 72, 5));
-        
+            font-family: Arial, sans-serif;
         }
 
         marquee {
@@ -37,45 +39,35 @@
             font-size: 16px;
         }
 
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+        }
+
         .box {
-            height: 300px;
-            width: 300px;
-            margin: 5px;
+            height: 200px;
+            width: 90%;
+            max-width: 300px;
             border: 1px solid green;
             border-radius: 5px;
             box-shadow: 3px 3px 13px blue;
             background-size: cover;
+            background-position: center;
             opacity: 0.5;
-            position: absolute;
-          
+            transition: opacity 0.3s ease-in-out;
         }
 
         .box:hover {
             opacity: 1;
         }
-
-        .div1 {
-            background-image: url("pic1.jpg");
-            top: 250px;
-            left: 10px;
-        }
-
-        .div2 {
-            background-image: url("pic2.jpg");
-            top: 250px;
-            left: 360px;
-        }
-
-        .div3 {
-            background-image: url("pic3.jpg");
-            top: 250px;
-            left: 710px;
-        }
     </style>
 </head>
 <body>
 
-    <marquee behavior="scroll" direction="left">
+    <marquee>
         Wishing You a Happy Independence Day - 15th August
     </marquee>
 
@@ -83,9 +75,11 @@
     <h2>HTML & CSS Styling Example</h2>
     <p>This page demonstrates the basic usage of HTML and CSS to create a colorful background, apply box effects, and overlay images using <code>div</code> elements. Hover over the images below to see the effect!</p>
 
-    <div class="box div1"></div>
-    <div class="box div2"></div>
-    <div class="box div3"></div>
+    <div class="image-gallery">
+        <div class="box" style="background-image: url('pic1.jpg');"></div>
+        <div class="box" style="background-image: url('pic2.jpg');"></div>
+        <div class="box" style="background-image: url('pic3.jpg');"></div>
+    </div>
 
 </body>
 </html>
